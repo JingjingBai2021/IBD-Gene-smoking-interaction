@@ -101,10 +101,10 @@ plot(Opposite_ever$CD_OR,Opposite_ever$UC_OR,
      xlim=c(0,5),
      ylim=c(0,5),
      col=densCols(Opposite_ever$CD_OR,Opposite_ever$UC_OR),
-     pch=20,
+     pch=20,      
      main = "Ever/Never smoking",
-     xlab="CD", 
-     ylab="UC",
+     xlab="CD",       
+     ylab="UC",      
      axes = FALSE,
      cex.main = 1)
 axis(2,at=c(0.0,1.0,2.0,3.0,4.0,5.0),tick=T,labels = Lables)
@@ -113,16 +113,16 @@ abline(coef = c(0,1),col="grey", lty=2)
 text(Highlight_ever$CD_OR,
      Highlight_ever$UC_OR,
      Highlight_ever$`Gene context`,
-     cex=0.65, 
-     col="#164863",
-     offset =0.5,
+     cex=0.65,     
+     col="#164863",    
+     offset =0.5,      
      font = 4)
 points(Highlight_ever$CD_OR,
        Highlight_ever$UC_OR,
-       col="#B51B75",
-       cex=0.8,
-       bg="#E1AFD1",
-       pch=21)
+       col="#B51B75",    
+       cex=0.8,    
+       bg="#E1AFD1",    
+       pch=21)      
 dev.off()
 ##Making the density plot----
 install.packages("hrbrthemes")
