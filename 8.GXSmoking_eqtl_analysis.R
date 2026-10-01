@@ -2,7 +2,7 @@
 ##We added biological_use a new variate----
 IBD_inflam_interaction<- read_delim("/Users/jingjing/Documents/R_files/RNA-seq/IBD_Inflam.cis_qtl_top_assoc.txt")
 IBD_inflam_interaction_p_adj_0.05<- IBD_inflam_interaction %>% filter(IBD_inflam_interaction$pval_adj_bh<0.05) ##genome wide significant signals
-View(IBD_inflam_interaction_p_adj_0.05) ## After correcting for biological use, there is not a major differences in the GxS eqtl in the results. 
+View(IBD_inflam_interaction_p_adj_0.05) ## After correcting for biological use, there were not major differences in the GxS eqtl in the results. 
 
 
 filtered_data_qtl_bed_IBD_inflammation<-read_delim(file = "filtered_data_qtl_bed_IBD_inflammation.bed")
